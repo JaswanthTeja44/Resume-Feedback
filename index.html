@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume Feedback App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Feedback (AI Edition JHTK)</h1>
+    <input type="file" id="resumeInput" accept=".txt,.pdf,.docx" />
+    <button onclick="analyzeResume()">Get Feedback</button>
+    <div id="feedback" class="feedback" style="display:none;"></div>
+    <div id="error" class="error"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.4.2/mammoth.browser.min.js"></script>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
